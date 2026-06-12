@@ -1,0 +1,35 @@
+[
+  {
+    "name": "tool_camera_settings",
+    "prompt": "这个录屏工具摄像头不好用，每次都要调。",
+    "expected_contains": [
+      "需求重述",
+      "理想状态",
+      "关闭重开",
+      "验收清单",
+      "摄像头"
+    ]
+  },
+  {
+    "name": "content_ai_account",
+    "prompt": "我想做一个 AI 工具账号，但不知道怎么讲。",
+    "expected_contains": [
+      "目标用户",
+      "使用场景",
+      "第一阶段",
+      "验收清单",
+      "待确认"
+    ]
+  },
+  {
+    "name": "risky_customer_messaging",
+    "prompt": "帮我做个自动给客户群发消息的工具。",
+    "expected_contains": [
+      "风险点",
+      "人工确认",
+      "隐私",
+      "退订",
+      "验收清单"
+    ]
+  }
+]
