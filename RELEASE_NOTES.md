@@ -1,6 +1,6 @@
-# Release Notes Draft
+# Release Notes
 
-## v0.1.0 - Public release draft
+## v0.1.0 - Public clarify-idea skill
 
 ### Why This Release
 
@@ -24,8 +24,8 @@
 
 ### Validation
 
-- Local working tree was clean after commit and push.
-- Latest pushed commit: `bd65fd1 Use Chinese repository description`.
+- Local working tree was clean before release.
+- Release tag points to the latest verified `main` commit at release time.
 - Six `SKILL.md` copies were verified to have matching SHA-256 hashes.
 - `test-prompts.json` parses successfully and contains 3 prompts.
 - Recorded outputs cover all expected keywords in `test-prompts.json`.
@@ -39,15 +39,3 @@
 - No demo GIF or terminal recording yet.
 - GitHub API has not yet reported license detection as MIT, even though `LICENSE` exists.
 - GitHub README rendering should still be checked visually in a browser before broad announcement.
-
-### Suggested Tag
-
-```text
-v0.1.0
-```
-
-### Suggested GitHub Release Title
-
-```text
-v0.1.0 - Public clarify-idea skill
-```
