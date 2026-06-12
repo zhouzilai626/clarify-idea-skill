@@ -253,6 +253,11 @@ clarify-idea/
 - AGENTS.md 是面向 coding agents 的通用说明文件格式：[AGENTS.md](https://agents.md/)
 - Anthropic 官方 skills 示例仓库展示了基于 skill 目录的组织方式：[anthropics/skills](https://github.com/anthropics/skills)
 
+## 发布准备
+
+- [Publication checklist](PUBLICATION_CHECKLIST.md)
+- [Release notes draft](RELEASE_NOTES.md)
+
 ## License
 
 [MIT](LICENSE)
