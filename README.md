@@ -1,5 +1,7 @@
 # 把想法讲清楚
 
+<sub><b>中文</b> · <a href="README.en.md">English</a></sub>
+
 > 把一句含糊想法，变成别人能执行、AI 能接手、自己能验收的说明书。
 
 一个跨 AI 助手可复用的需求澄清 skill / prompt 包。它默认面向不会写代码、不熟悉产品或工程术语的用户：先澄清，再执行，少返工。
@@ -7,6 +9,8 @@
 [看效果](#效果示例) · [快速开始](#快速开始) · [触发方式](#触发方式) · [安全边界](#安全边界) · [验证](#验证)
 
 ## 效果示例
+
+![clarify-idea demo](assets/demo.gif)
 
 原始想法：
 
@@ -190,6 +194,12 @@ npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex
 
 验证结果：CLI 能克隆公开仓库、识别 1 个 skill，并将 `clarify-idea` 复制安装到测试项目的 Codex skill 目录。
 
+重新生成 demo GIF：
+
+```bash
+node scripts/render-demo-gif.mjs
+```
+
 ## 兼容平台
 
 本仓库按“核心 skill + 多平台适配层”的方式组织。
@@ -212,8 +222,13 @@ npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex
 clarify-idea/
 ├── SKILL.md
 ├── README.md
+├── README.en.md
 ├── LICENSE
 ├── test-prompts.json
+├── assets/
+│   └── demo.gif
+├── scripts/
+│   └── render-demo-gif.mjs
 ├── examples/
 │   ├── content-ai-account.md
 │   ├── risky-customer-messaging.md
