@@ -1,10 +1,10 @@
 # Release Notes Draft
 
-## v0.1.0 - Publish-ready draft
+## v0.1.0 - Public release draft
 
 ### Why This Release
 
-`clarify-idea` started as a reusable prompt for turning vague ideas into clear requirements. This release turns it into a publish-ready cross-agent skill package with visible examples, safety boundaries, and replayable validation prompts.
+`clarify-idea` started as a reusable prompt for turning vague ideas into clear requirements. This release turns it into a public cross-agent skill package with visible examples, safety boundaries, replayable validation prompts, and a verified `skills` CLI install path.
 
 ### What Changed
 
@@ -19,25 +19,26 @@
   - risky customer messaging workflow
 - Added `test-prompts.json` for replayable checks.
 - Added MIT license.
+- Published the repository publicly with Chinese description and discovery topics.
+- Verified one-line install through the `skills` CLI.
 
 ### Validation
 
 - Local working tree was clean after commit and push.
-- Latest pushed commit: `c8ac016 Polish clarify-idea skill for publish readiness`.
+- Latest pushed commit: `bd65fd1 Use Chinese repository description`.
 - Six `SKILL.md` copies were verified to have matching SHA-256 hashes.
 - `test-prompts.json` parses successfully and contains 3 prompts.
 - Recorded outputs cover all expected keywords in `test-prompts.json`.
 - Secret scan found no token, API key, cookie, password, secret, or private user path.
 - Remote GitHub API confirmed README, `test-prompts.json`, `LICENSE`, and `examples/outputs/` exist.
+- Public raw README and `test-prompts.json` are accessible.
+- `npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y` cloned the public repository, found 1 skill, and installed `clarify-idea` into a temporary Codex test project.
 
 ### Known Gaps Before Public Announcement
 
-- Repository is still private.
-- GitHub repository description is empty.
-- GitHub repository topics are empty.
-- Public raw URL checks cannot pass until repository visibility is public.
 - No demo GIF or terminal recording yet.
-- No registry install verification yet.
+- GitHub API has not yet reported license detection as MIT, even though `LICENSE` exists.
+- GitHub README rendering should still be checked visually in a browser before broad announcement.
 
 ### Suggested Tag
 
@@ -48,5 +49,5 @@ v0.1.0
 ### Suggested GitHub Release Title
 
 ```text
-v0.1.0 - Publish-ready clarify-idea skill
+v0.1.0 - Public clarify-idea skill
 ```
