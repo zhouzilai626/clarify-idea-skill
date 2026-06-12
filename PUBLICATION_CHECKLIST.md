@@ -6,9 +6,9 @@ This checklist tracks what is ready before making `zzpt8/clarify-idea-skill` pub
 
 | Item | Status | Evidence |
 |---|---|---|
-| Latest commit pushed | Done | `c8ac016 Polish clarify-idea skill for publish readiness` is on `origin/main` |
+| Latest commit pushed | Done | `a426beb Add publication readiness notes` is on `origin/main` |
 | Working tree clean | Done | `git status` reports `main...origin/main` |
-| Repository visibility | Pending authorization | GitHub reports `PRIVATE` |
+| Repository visibility | Done | GitHub reports `PUBLIC` |
 | Repository description | Pending | GitHub description is empty |
 | Repository topics | Pending | GitHub topics are empty |
 | License file | Done | `LICENSE` exists |
@@ -26,6 +26,7 @@ This checklist tracks what is ready before making `zzpt8/clarify-idea-skill` pub
 | Test prompts | Done | `test-prompts.json` contains 3 replayable prompts |
 | Recorded outputs | Done | `examples/outputs/` contains 3 outputs and an index |
 | Showcase | Done | README includes a Showcase result card with 5/5 checks |
+| Public install check | Done | `npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y` cloned the public repo, found 1 skill, and installed `clarify-idea` into a temporary Codex test project |
 
 ## Public Release Blockers
 
@@ -43,16 +44,16 @@ These items should be completed before making the repository public or announcin
    agent-skills, codex, claude-code, opencode, requirements, prd, prompt-engineering
    ```
 
-3. Decide whether to keep manual install instructions only, or add a registry install path such as `npx skills add zzpt8/clarify-idea-skill` after public availability is confirmed.
-
-4. After the repository is public, verify raw public access:
+3. After the repository is public, verify raw public access:
 
    ```bash
    curl -L https://raw.githubusercontent.com/zzpt8/clarify-idea-skill/main/README.md
    curl -L https://raw.githubusercontent.com/zzpt8/clarify-idea-skill/main/test-prompts.json
    ```
 
-5. After the repository is public, verify GitHub README rendering in a browser.
+   Status: Done. Public raw README and `test-prompts.json` are accessible.
+
+4. After the repository is public, verify GitHub README rendering in a browser.
 
 ## Optional Before Public Announcement
 

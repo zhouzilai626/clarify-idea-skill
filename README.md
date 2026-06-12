@@ -79,16 +79,16 @@
 
 ### Codex
 
-复制整个 `clarify-idea` 目录到本地 Codex skills 目录，例如：
+已实测的一行安装：
+
+```bash
+npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y
+```
+
+也可以手动复制整个 `clarify-idea` 目录到本地 Codex skills 目录，例如：
 
 ```text
 ~/.codex/skills/clarify-idea
-```
-
-Windows 常见位置：
-
-```text
-C:\Users\<你的用户名>\.codex\skills\clarify-idea
 ```
 
 装完后对 AI 说：
@@ -181,6 +181,14 @@ prompts/clarify-idea.prompt.md
 2. 检查输出是否包含 `expected_contains` 里的关键内容。
 3. 检查验收清单是否是用户能亲自执行的动作，而不是“功能正常”。
 4. 将新输出与 `examples/outputs/` 中的记录对照，确认没有丢失安全边界、待确认问题或验收步骤。
+
+公开仓库安装验证：
+
+```bash
+npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y
+```
+
+验证结果：CLI 能克隆公开仓库、识别 1 个 skill，并将 `clarify-idea` 复制安装到测试项目的 Codex skill 目录。
 
 ## 兼容平台
 
