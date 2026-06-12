@@ -1,5 +1,31 @@
 # Release Notes
 
+## v0.1.1 - Demo GIF and English README
+
+### Why This Release
+
+`v0.1.0` made the skill public and installable. This patch release improves the public-facing package so first-time visitors can see the workflow quickly and non-Chinese users can evaluate the skill without translating the main README.
+
+### What Changed
+
+- Added `assets/demo.gif` to show a vague idea becoming a clear, verifiable brief.
+- Added `scripts/render-demo-gif.mjs` so the demo GIF can be regenerated from source.
+- Added `README.en.md` with English install instructions, examples, safety boundaries, validation flow, and file structure.
+- Added language switch links between `README.md` and `README.en.md`.
+- Embedded the demo GIF in both Chinese and English READMEs.
+- Updated the publication checklist to mark demo GIF and English README as complete.
+
+### Validation
+
+- GitHub Chinese README renders correctly and loads `assets/demo.gif`.
+- GitHub English README renders correctly, links back to Chinese, and loads `assets/demo.gif`.
+- `node scripts/render-demo-gif.mjs` regenerates the GIF.
+- `test-prompts.json` parses successfully.
+- Local Markdown links in `README.md` and `README.en.md` resolve.
+- `git diff --check` reports no whitespace errors.
+- Public raw `README.en.md` and `assets/demo.gif` return `200 OK`.
+- `npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y` installs the public skill successfully.
+
 ## v0.1.0 - Public clarify-idea skill
 
 ### Why This Release
@@ -36,6 +62,5 @@
 
 ### Known Gaps Before Public Announcement
 
-- No demo GIF or terminal recording yet.
 - GitHub API has not yet reported license detection as MIT, even though `LICENSE` exists.
-- GitHub README rendering should still be checked visually in a browser before broad announcement.
+- Marketplace / skills.sh registration is intentionally deferred.
