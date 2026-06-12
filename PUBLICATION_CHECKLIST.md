@@ -6,11 +6,11 @@ This checklist tracks what is ready before making `zzpt8/clarify-idea-skill` pub
 
 | Item | Status | Evidence |
 |---|---|---|
-| Latest commit pushed | Done | `a426beb Add publication readiness notes` is on `origin/main` |
+| Latest commit pushed | Done | `1525dd0 Document public install verification` is on `origin/main` |
 | Working tree clean | Done | `git status` reports `main...origin/main` |
 | Repository visibility | Done | GitHub reports `PUBLIC` |
-| Repository description | Pending | GitHub description is empty |
-| Repository topics | Pending | GitHub topics are empty |
+| Repository description | Done | `Cross-agent skill that turns vague ideas into clear, executable, and verifiable requirements.` |
+| Repository topics | Done | `agent-skills`, `claude-code`, `codex`, `opencode`, `prd`, `prompt-engineering`, `requirements` |
 | License file | Done | `LICENSE` exists |
 | GitHub license detection | Pending | GitHub API currently reports `license: null`; may update after public indexing or need repository metadata refresh |
 
@@ -32,19 +32,7 @@ This checklist tracks what is ready before making `zzpt8/clarify-idea-skill` pub
 
 These items should be completed before making the repository public or announcing it.
 
-1. Add GitHub repository description:
-
-   ```text
-   Cross-agent skill that turns vague ideas into clear, executable, and verifiable requirements.
-   ```
-
-2. Add GitHub topics:
-
-   ```text
-   agent-skills, codex, claude-code, opencode, requirements, prd, prompt-engineering
-   ```
-
-3. After the repository is public, verify raw public access:
+1. After the repository is public, verify raw public access:
 
    ```bash
    curl -L https://raw.githubusercontent.com/zzpt8/clarify-idea-skill/main/README.md
@@ -53,7 +41,7 @@ These items should be completed before making the repository public or announcin
 
    Status: Done. Public raw README and `test-prompts.json` are accessible.
 
-4. After the repository is public, verify GitHub README rendering in a browser.
+2. After the repository is public, verify GitHub README rendering in a browser.
 
 ## Optional Before Public Announcement
 
@@ -67,6 +55,5 @@ These items should be completed before making the repository public or announcin
 Each of these needs a separate clear instruction before execution:
 
 - Change repository visibility from private to public.
-- Edit GitHub repository description or topics.
 - Create a tag or GitHub release.
 - Publish to any registry or marketplace.
