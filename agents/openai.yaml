@@ -1,0 +1,3 @@
+display_name: 把想法讲清楚
+short_description: 把模糊想法整理成可执行、可验收需求
+default_prompt: 帮我把这个想法讲清楚，先不要执行，先整理成可确认的需求和验收清单。
