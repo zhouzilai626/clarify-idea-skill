@@ -9,7 +9,7 @@ This checklist tracks what is ready before making `zzpt8/clarify-idea-skill` pub
 | Latest commit pushed | Done | `1525dd0 Document public install verification` is on `origin/main` |
 | Working tree clean | Done | `git status` reports `main...origin/main` |
 | Repository visibility | Done | GitHub reports `PUBLIC` |
-| Repository description | Done | `Cross-agent skill that turns vague ideas into clear, executable, and verifiable requirements.` |
+| Repository description | Done | `把模糊想法整理成清晰、可执行、可验收需求的跨 Agent Skill。` |
 | Repository topics | Done | `agent-skills`, `claude-code`, `codex`, `opencode`, `prd`, `prompt-engineering`, `requirements` |
 | License file | Done | `LICENSE` exists |
 | GitHub license detection | Pending | GitHub API currently reports `license: null`; may update after public indexing or need repository metadata refresh |
