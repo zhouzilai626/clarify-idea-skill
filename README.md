@@ -86,7 +86,7 @@
 已实测的一行安装：
 
 ```bash
-npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y
+npx --yes skills add zhouzilai626/clarify-idea-skill --skill clarify-idea --agent codex --copy -y
 ```
 
 也可以手动复制整个 `clarify-idea` 目录到本地 Codex skills 目录，例如：
@@ -189,7 +189,7 @@ prompts/clarify-idea.prompt.md
 公开仓库安装验证：
 
 ```bash
-npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y
+npx --yes skills add zhouzilai626/clarify-idea-skill --skill clarify-idea --agent codex --copy -y
 ```
 
 验证结果：CLI 能克隆公开仓库、识别 1 个 skill，并将 `clarify-idea` 复制安装到测试项目的 Codex skill 目录。

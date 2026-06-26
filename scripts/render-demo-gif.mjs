@@ -258,7 +258,7 @@ const frames = [];
   text(img, "3 prompts", 102, 270, C.text, 4);
   text(img, "3 recorded outputs", 102, 318, C.text, 4);
   text(img, "5/5 checks in README", 102, 366, C.green, 4);
-  text(img, "Install: npx skills add zzpt8/clarify-idea-skill", 70, 448, C.muted, 3);
+  text(img, "Install: npx skills add zhouzilai626/clarify-idea-skill", 70, 448, C.muted, 3);
   frames.push(img);
 }
 

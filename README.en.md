@@ -86,7 +86,7 @@ For more complex work, the output can be upgraded into:
 Tested one-line install:
 
 ```bash
-npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y
+npx --yes skills add zhouzilai626/clarify-idea-skill --skill clarify-idea --agent codex --copy -y
 ```
 
 You can also manually copy the whole `clarify-idea` directory into your local Codex skills directory, for example:
@@ -185,7 +185,7 @@ Validation flow:
 Public install check:
 
 ```bash
-npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y
+npx --yes skills add zhouzilai626/clarify-idea-skill --skill clarify-idea --agent codex --copy -y
 ```
 
 Verified result: the CLI can clone the public repository, detect 1 skill, and copy-install `clarify-idea` into a temporary Codex test project.

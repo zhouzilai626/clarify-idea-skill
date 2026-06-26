@@ -24,7 +24,7 @@
 - Local Markdown links in `README.md` and `README.en.md` resolve.
 - `git diff --check` reports no whitespace errors.
 - Public raw `README.en.md` and `assets/demo.gif` return `200 OK`.
-- `npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y` installs the public skill successfully.
+- `npx --yes skills add zhouzilai626/clarify-idea-skill --skill clarify-idea --agent codex --copy -y` installs the public skill successfully.
 
 ## v0.1.0 - Public clarify-idea skill
 
@@ -58,7 +58,7 @@
 - Secret scan found no token, API key, cookie, password, secret, or private user path.
 - Remote GitHub API confirmed README, `test-prompts.json`, `LICENSE`, and `examples/outputs/` exist.
 - Public raw README and `test-prompts.json` are accessible.
-- `npx --yes skills add zzpt8/clarify-idea-skill --skill clarify-idea --agent codex --copy -y` cloned the public repository, found 1 skill, and installed `clarify-idea` into a temporary Codex test project.
+- `npx --yes skills add zhouzilai626/clarify-idea-skill --skill clarify-idea --agent codex --copy -y` cloned the public repository, found 1 skill, and installed `clarify-idea` into a temporary Codex test project.
 
 ### Known Gaps Before Public Announcement
 
